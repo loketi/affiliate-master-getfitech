@@ -572,7 +572,17 @@ div#menu-SelectedAdSpace[role="presentation"] * {
   font-size: 50px;
 }
 
-</style></head>
+</style>
+
+<!--BODY BACKGROUND IMAGE CODE START -->
+	<style>
+        body {
+        background-image: url('https://www.getfitech.blog/beautiful-pink-petals.jpg');
+             }
+        </style>
+<!--BODY BACKGROUND IMAGE CODE END -->
+
+</head>
   <body data-rsssl="1" class="page-template page-template-elementor_header_footer page page-id-2511908 page-child parent-pageid-2511814 wp-embed-responsive header-full-width content-sidebar genesis-breadcrumbs-hidden genesis-footer-widgets-hidden magazine-pro-orange has-no-blocks elementor-default elementor-template-full-width elementor-kit-2512913 elementor-page elementor-page-2511908"
     data-elementor-device-mode="desktop" style="">
     <style>
@@ -7452,5 +7462,52 @@ if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_c
     <script type="text/javascript" async="" src="in.php"></script>
   </body>
 </html>
-</style> </body>
+</style> 
+<style>
+	#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 2px;
+		right: 6px;
+		z-index: 99;
+		font-size: 14px;
+		border: none;
+		outline: none;
+		background-color: #CC6600;
+		color: white;
+		cursor: pointer;
+		padding: 10px;
+		border-radius: 10px;
+	}
+
+	#myBtn:hover {
+		background-color: #555;
+	}
+</style>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div style="background-color:white;padding:3px 3px 0px"></strong></div>
+
+<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function () { scrollFunction() };
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+</script>
+</body>
 </html>
